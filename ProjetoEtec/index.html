@@ -11,25 +11,35 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#">+Agro</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" title="Para o Produtor" href="#">Para o Produtor</a></li>
-                <li class="nav-item"><a class="nav-link" title="Serviços" href="#">Serviços</a></li>
-                <li class="nav-item"><a class="nav-link" title="Quem somos" href="#">Quem somos</a></li>
-                <li class="nav-item"><a class="nav-link" title="Nossa Missão" href="#">Nossa Missão</a></li>
-            </ul>
+<div class="nav_bar">
+    <nav id="nav_bar">
+        <img src="logo.png" alt="logo" class="logo">
+        <div id="nav_links">
+            <a href="#">Para o Produtor</a>
+            <a href="#">Serviços</a>
+            <a href="#">Quem somos</a>
+            <a href="#">Nossa Missão</a>
+        </div>
+        <div class="login">
+            <span>Entre</span>
+            <input type="text" placeholder="Conta">
+            <input type="text" placeholder="seu e-mail de acesso" class="email_acesso">
+            <button type="button"><img src="img/Button.png" class="button_1"></button>
         </div>
     </nav>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
      <!--Container-->
-<div class="container">
+<div class="container" id="container">
         <!-- Carousel -->
-        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+        <div id="carousel-item img" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="slide1.png" alt="Slide 1">
@@ -52,39 +62,52 @@
         </div>
 
         <!--Cards-->
+        <div class="cards">
         <aside>
-            <div class="card">
-                <img src="https://via.placeholder.com/150" alt="Imagem de Habilite-se">
-                <div class="card-body">
-                    <h5 class="card-title">Habilite-se</h5>
-                    <p class="card-text">Adquira seu Certificado<br>Compense a Emissão de Carbono</p>
-                    <a href="#" class="btn-saiba-mais">Saiba mais</a>
-                </div>
-
-
-                <img src="https://via.placeholder.com/150" alt="Imagem de Crédito de Carbono">
-                <div class="card-body">
-                    <h5 class="card-title">Crédito de Carbono</h5>
-                    <p class="card-text">Como são gerados?<br>É bom para o planeta e para você!</p>
-                    <a href="#" class="btn-saiba-mais">Saiba mais</a>
-                </div>
-
-
-                <img src="https://via.placeholder.com/150" alt="Imagem de Habilite-se">
-                <div class="card-body">
-                    <h5 class="card-title">Habilite-se</h5>
-                    <p class="card-text">Adquira seu Certificado<br>Compense a Emissão de Carbono</p>
-                    <a href="#" class="btn-saiba-mais">Saiba mais</a>
-                </div>
-
-
-                <p class="opiniao-title">O que você pensa sobre Créditos de Carbono Futuro?</p>
-                <label for="opiniao">Opinião</label>
-                <textarea id="opiniao" maxlength="120"></textarea>
-                <small>120 caracteres</small>
-                <button class="btn-enviar">Enviar</button>
+            <img src="img/Image_1.png" alt="" class="image_1">
+            <div class="txt"></div>
+            <div>
+                <p class="p_1">Habilite-se</p>
+                <p class="p_2">Adquira seu Certificado <br> Compense a Emissão de Carbono</p>
             </div>
-</div>
+            <div class="link_1"></div>
+            <div>
+                <a href="" class="a_1">Saiba Mais</a>
+            </div>
+            <img src="img/Image_2.png" alt="" class="image_2">
+            <div class="link_2">
+            </div>
+            <div>
+                <p class="p_3">Crédito de Carbono</p>
+                <p class="p_4">Como são gerados? <br> É bom para o planeta e para você!</p>
+            </div>
+            <div class="back_color"></div>
+            <a href="#" class="a_2">Saiba Mais</a>
+    
+            <div class="back_color1"></div>
+            <div class="last_aside">
+                <div>
+                    <p class="title_aside">Cotação</p>
+                </div>
+                <div>
+                    <img src="img/Cotação.png" alt="cotação" class="cotacao">
+                    <img src="img/Icon_Cotação.png" alt="icon_cotação" class="icon_cotacao">
+                </div>
+                <div>
+                    <p class="p_aside">O que você pensa sobre Créditos <br> de Carbono Futuro?</p>
+                    <p class="opiniao_aside">Opinião</p>
+                </div>
+                <div>
+                    <input type="text" class="back_color2" min="1" maxlength="120" size="2">
+                </div>
+                <div>
+                    <p class="p_aside1">120 caracteres</p>
+                    <input type="submit" placeholder="Enviar" class="sub_aside">
+                </div>
+            </div>
+        </div>
+        </aside>
+    </div>
 
     <!-- Histórias de Sucesso -->
 <section class="success-stories">
